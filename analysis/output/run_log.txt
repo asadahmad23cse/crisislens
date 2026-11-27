@@ -1,0 +1,201 @@
+1. classification
+2. geolocation
+3. dedupe, spam
+4. silent zone detection
+   sensitivity
+5. loudness bias
+6. need co-occurrence
+7. networks
+8. figures
+{
+ "ladder": {
+  "1 Prototype as built (supplied baseline, need posts, v1 constants)": {
+   "pooled": {
+    "precision": 0.8,
+    "recall": 0.4,
+    "f1": 0.533,
+    "tp": 4,
+    "fp": 1,
+    "fn": 6
+   },
+   "Kerala 2018": {
+    "precision": 0.5,
+    "recall": 0.5,
+    "f1": 0.5,
+    "tp": 1,
+    "fp": 1,
+    "fn": 1
+   },
+   "Maria 2017": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1": 0.333,
+    "tp": 1,
+    "fp": 0,
+    "fn": 4
+   },
+   "Nepal 2015": {
+    "precision": 1.0,
+    "recall": 0.667,
+    "f1": 0.8,
+    "tp": 2,
+    "fp": 0,
+    "fn": 1
+   },
+   "flagged": [
+    "Alappuzha",
+    "Gorkha",
+    "Humacao",
+    "Pathanamthitta",
+    "Sindhupalchok"
+   ]
+  },
+  "2 + empirical baseline & 'voices from' counting": {
+   "pooled": {
+    "precision": 1.0,
+    "recall": 0.1,
+    "f1": 0.182,
+    "tp": 1,
+    "fp": 0,
+    "fn": 9
+   },
+   "Kerala 2018": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 2
+   },
+   "Maria 2017": {
+    "precision": 1.0,
+    "recall": 0.2,
+    "f1": 0.333,
+    "tp": 1,
+    "fp": 0,
+    "fn": 4
+   },
+   "Nepal 2015": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "flagged": [
+    "Humacao"
+   ]
+  },
+  "3 + v2 calibration (fitted theta, peer surge, severity gate)": {
+   "pooled": {
+    "precision": 0.667,
+    "recall": 0.6,
+    "f1": 0.632,
+    "tp": 6,
+    "fp": 3,
+    "fn": 4
+   },
+   "Kerala 2018": {
+    "precision": 0.4,
+    "recall": 1.0,
+    "f1": 0.571,
+    "tp": 2,
+    "fp": 3,
+    "fn": 0
+   },
+   "Maria 2017": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.889,
+    "tp": 4,
+    "fp": 0,
+    "fn": 1
+   },
+   "Nepal 2015": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "tp": 0,
+    "fp": 0,
+    "fn": 3
+   },
+   "flagged": [
+    "Alappuzha",
+    "Ernakulam",
+    "Guayama",
+    "Humacao",
+    "Idukki",
+    "Pathanamthitta",
+    "Thrissur",
+    "Utuado",
+    "Yabucoa"
+   ]
+  },
+  "4 + zero-need-voice rule (Z)": {
+   "pooled": {
+    "precision": 0.7,
+    "recall": 0.7,
+    "f1": 0.7,
+    "tp": 7,
+    "fp": 3,
+    "fn": 3
+   },
+   "Kerala 2018": {
+    "precision": 0.4,
+    "recall": 1.0,
+    "f1": 0.571,
+    "tp": 2,
+    "fp": 3,
+    "fn": 0
+   },
+   "Maria 2017": {
+    "precision": 1.0,
+    "recall": 0.8,
+    "f1": 0.889,
+    "tp": 4,
+    "fp": 0,
+    "fn": 1
+   },
+   "Nepal 2015": {
+    "precision": 1.0,
+    "recall": 0.333,
+    "f1": 0.5,
+    "tp": 1,
+    "fp": 0,
+    "fn": 2
+   },
+   "flagged": [
+    "Alappuzha",
+    "Ernakulam",
+    "Guayama",
+    "Humacao",
+    "Idukki",
+    "Pathanamthitta",
+    "Rasuwa",
+    "Thrissur",
+    "Utuado",
+    "Yabucoa"
+   ]
+  },
+  "5 + evacuation / data-gap screen": {
+   "pooled": {
+    "precision": 0.857,
+    "recall": 0.6,
+    "f1": 0.706,
+    "tp": 6,
+    "fp": 1,
+    "fn": 4
+   },
+   "Kerala 2018": {
+    "precision": 0.667,
+    "recall": 1.0,
+    "f1": 0.8,
+    "tp": 2,
+    "fp": 1,
+    "fn": 0
+   },
+   "Maria 2017": {
+    "precision": 1.0,
+    "r
+done -> C:\Users\ASAD AHMAD\Downloads\csm\analysis\output

@@ -1,0 +1,1115 @@
+{
+  "dataset": {
+    "posts": 23387,
+    "authors": 4038,
+    "per_event": {
+      "Nepal 2015": {
+        "posts": 6017,
+        "pre_event": 2598,
+        "post_event": 3419,
+        "authors": 1040
+      },
+      "Maria 2017": {
+        "posts": 7303,
+        "pre_event": 3139,
+        "post_event": 4164,
+        "authors": 1277
+      },
+      "Kerala 2018": {
+        "posts": 10067,
+        "pre_event": 4469,
+        "post_event": 5598,
+        "authors": 1721
+      }
+    },
+    "units": 42,
+    "true_silent_zones": 10,
+    "true_silent_by_event": {
+      "Nepal 2015": 3,
+      "Maria 2017": 5,
+      "Kerala 2018": 2
+    },
+    "languages": {
+      "en": 22697,
+      "es": 256,
+      "ne": 168,
+      "ml": 139,
+      "ml-Latn": 127
+    },
+    "platforms": {
+      "twitter": 21102,
+      "reddit": 2285
+    },
+    "reposts": 2565,
+    "with_coordinates": 2301
+  },
+  "classification": {
+    "v1 lexicon (original TS)": {
+      "relevance": {
+        "precision": 0.665,
+        "recall": 0.782,
+        "f1": 0.719,
+        "tp": 7336,
+        "fp": 3700,
+        "fn": 2043
+      },
+      "need_micro_f1": 0.597,
+      "need_macro_f1": 0.573,
+      "per_need_f1": {
+        "rescue": 0.582,
+        "medical": 0.663,
+        "shelter": 0.754,
+        "water": 0.564,
+        "food": 0.607,
+        "power": 0.6,
+        "telecom": 0.404,
+        "missing": 0.698,
+        "road": 0.524,
+        "safety": 0.335
+      },
+      "urgency_exact_acc_on_relevant": 0.273,
+      "urgency_weighted_kappa": 0.461,
+      "negated_posts_correctly_not_relevant": 0.0,
+      "relevance_recall_by_lang": {
+        "en": 0.824,
+        "ne": 0.0,
+        "es": 0.191,
+        "ml-Latn": 1.0,
+        "ml": 0.0
+      },
+      "relevance_f1_by_event": {
+        "Nepal 2015": 0.639,
+        "Maria 2017": 0.739,
+        "Kerala 2018": 0.742
+      }
+    },
+    "v2 lexicon (revised)": {
+      "relevance": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 9379,
+        "fp": 0,
+        "fn": 0
+      },
+      "need_micro_f1": 0.991,
+      "need_macro_f1": 0.99,
+      "per_need_f1": {
+        "rescue": 1.0,
+        "medical": 1.0,
+        "shelter": 1.0,
+        "water": 1.0,
+        "food": 0.953,
+        "power": 0.944,
+        "telecom": 1.0,
+        "missing": 1.0,
+        "road": 1.0,
+        "safety": 1.0
+      },
+      "urgency_exact_acc_on_relevant": 0.966,
+      "urgency_weighted_kappa": 0.995,
+      "negated_posts_correctly_not_relevant": 1.0,
+      "relevance_recall_by_lang": {
+        "en": 1.0,
+        "ne": 1.0,
+        "es": 1.0,
+        "ml-Latn": 1.0,
+        "ml": 1.0
+      },
+      "relevance_f1_by_event": {
+        "Nepal 2015": 1.0,
+        "Maria 2017": 1.0,
+        "Kerala 2018": 1.0
+      }
+    },
+    "TF-IDF + logistic regression (leave-one-event-out)": {
+      "relevance_f1_by_event": {
+        "Nepal 2015": 0.96,
+        "Maria 2017": 0.858,
+        "Kerala 2018": 0.845
+      },
+      "need_micro_f1_by_event": {
+        "Nepal 2015": 0.832,
+        "Maria 2017": 0.815,
+        "Kerala 2018": 0.833
+      },
+      "relevance_f1_mean": 0.888,
+      "need_micro_f1_mean": 0.827
+    }
+  },
+  "classification_errors_v2": {
+    "false_positives": [],
+    "false_negatives": []
+  },
+  "geolocation": {
+    "evaluated_posts": 9379,
+    "incident_location_accuracy": 1.0,
+    "accuracy_by_method": {
+      "text": {
+        "mean": 1.0,
+        "size": 9288
+      },
+      "text_now_at": {
+        "mean": 1.0,
+        "size": 91
+      }
+    },
+    "author_location_would_be_correct": 0.419,
+    "author_location_available": 0.565,
+    "posts_by_outside_authors": 0.105,
+    "evacuee_now_at_rule": {
+      "posts": 91,
+      "accuracy": 1.0
+    }
+  },
+  "dedupe": {
+    "amplification": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 2565,
+      "fp": 0,
+      "fn": 0
+    },
+    "copies": {
+      "precision": 1.0,
+      "recall": 0.361,
+      "f1": 0.531,
+      "tp": 223,
+      "fp": 0,
+      "fn": 394
+    },
+    "independent_report": {
+      "precision": 0.94,
+      "recall": 1.0,
+      "f1": 0.969,
+      "tp": 6197,
+      "fp": 394,
+      "fn": 0
+    },
+    "spam_accounts": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "tp": 18,
+      "fp": 0,
+      "fn": 0,
+      "n_gold_bot_accounts": 18
+    },
+    "inflation": {
+      "relevant_posts": 9379,
+      "independent_reports_gold": 6197,
+      "distinct_authors": 3424,
+      "posts_per_independent_report": 1.51
+    }
+  },
+  "ladder": {
+    "1 Prototype as built (supplied baseline, need posts, v1 constants)": {
+      "pooled": {
+        "precision": 0.8,
+        "recall": 0.4,
+        "f1": 0.533,
+        "tp": 4,
+        "fp": 1,
+        "fn": 6
+      },
+      "Kerala 2018": {
+        "precision": 0.5,
+        "recall": 0.5,
+        "f1": 0.5,
+        "tp": 1,
+        "fp": 1,
+        "fn": 1
+      },
+      "Maria 2017": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "tp": 1,
+        "fp": 0,
+        "fn": 4
+      },
+      "Nepal 2015": {
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "tp": 2,
+        "fp": 0,
+        "fn": 1
+      },
+      "flagged": [
+        "Alappuzha",
+        "Gorkha",
+        "Humacao",
+        "Pathanamthitta",
+        "Sindhupalchok"
+      ]
+    },
+    "2 + empirical baseline & 'voices from' counting": {
+      "pooled": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.182,
+        "tp": 1,
+        "fp": 0,
+        "fn": 9
+      },
+      "Kerala 2018": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 2
+      },
+      "Maria 2017": {
+        "precision": 1.0,
+        "recall": 0.2,
+        "f1": 0.333,
+        "tp": 1,
+        "fp": 0,
+        "fn": 4
+      },
+      "Nepal 2015": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "flagged": [
+        "Humacao"
+      ]
+    },
+    "3 + v2 calibration (fitted theta, peer surge, severity gate)": {
+      "pooled": {
+        "precision": 0.667,
+        "recall": 0.6,
+        "f1": 0.632,
+        "tp": 6,
+        "fp": 3,
+        "fn": 4
+      },
+      "Kerala 2018": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.571,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0
+      },
+      "Maria 2017": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1
+      },
+      "Nepal 2015": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "flagged": [
+        "Alappuzha",
+        "Ernakulam",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Thrissur",
+        "Utuado",
+        "Yabucoa"
+      ]
+    },
+    "4 + zero-need-voice rule (Z)": {
+      "pooled": {
+        "precision": 0.7,
+        "recall": 0.7,
+        "f1": 0.7,
+        "tp": 7,
+        "fp": 3,
+        "fn": 3
+      },
+      "Kerala 2018": {
+        "precision": 0.4,
+        "recall": 1.0,
+        "f1": 0.571,
+        "tp": 2,
+        "fp": 3,
+        "fn": 0
+      },
+      "Maria 2017": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1
+      },
+      "Nepal 2015": {
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5,
+        "tp": 1,
+        "fp": 0,
+        "fn": 2
+      },
+      "flagged": [
+        "Alappuzha",
+        "Ernakulam",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Rasuwa",
+        "Thrissur",
+        "Utuado",
+        "Yabucoa"
+      ]
+    },
+    "5 + evacuation / data-gap screen": {
+      "pooled": {
+        "precision": 0.857,
+        "recall": 0.6,
+        "f1": 0.706,
+        "tp": 6,
+        "fp": 1,
+        "fn": 4
+      },
+      "Kerala 2018": {
+        "precision": 0.667,
+        "recall": 1.0,
+        "f1": 0.8,
+        "tp": 2,
+        "fp": 1,
+        "fn": 0
+      },
+      "Maria 2017": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1
+      },
+      "Nepal 2015": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "flagged": [
+        "Ernakulam",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Utuado",
+        "Yabucoa"
+      ]
+    },
+    "6 + corroboration required (night lights / cell sites)": {
+      "pooled": {
+        "precision": 1.0,
+        "recall": 0.6,
+        "f1": 0.75,
+        "tp": 6,
+        "fp": 0,
+        "fn": 4
+      },
+      "Kerala 2018": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "Maria 2017": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.889,
+        "tp": 4,
+        "fp": 0,
+        "fn": 1
+      },
+      "Nepal 2015": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 0,
+        "fn": 3
+      },
+      "flagged": [
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Utuado",
+        "Yabucoa"
+      ]
+    },
+    "7 + fusion rule F = final method": {
+      "pooled": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.947,
+        "tp": 9,
+        "fp": 0,
+        "fn": 1
+      },
+      "Kerala 2018": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 2,
+        "fp": 0,
+        "fn": 0
+      },
+      "Maria 2017": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 5,
+        "fp": 0,
+        "fn": 0
+      },
+      "Nepal 2015": {
+        "precision": 1.0,
+        "recall": 0.667,
+        "f1": 0.8,
+        "tp": 2,
+        "fp": 0,
+        "fn": 1
+      },
+      "flagged": [
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    }
+  },
+  "ranking_baselines": {
+    "Loudness dashboard: most need posts": {
+      "auc_mean_over_events": 0.051,
+      "r_precision": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "tp": 0,
+        "fp": 10,
+        "fn": 10
+      }
+    },
+    "Inverse volume: fewest need posts": {
+      "auc_mean_over_events": 0.949,
+      "r_precision": {
+        "precision": 0.8,
+        "recall": 0.8,
+        "f1": 0.8,
+        "tp": 8,
+        "fp": 2,
+        "fn": 2
+      }
+    },
+    "Exposure only: highest expected need": {
+      "auc_mean_over_events": 0.482,
+      "r_precision": {
+        "precision": 0.2,
+        "recall": 0.2,
+        "f1": 0.2,
+        "tp": 2,
+        "fp": 8,
+        "fn": 8
+      }
+    },
+    "Social residual only (final method's score)": {
+      "auc_mean_over_events": 0.914,
+      "r_precision": {
+        "precision": 0.7,
+        "recall": 0.7,
+        "f1": 0.7,
+        "tp": 7,
+        "fp": 3,
+        "fn": 3
+      }
+    },
+    "Night-light drop only": {
+      "auc_mean_over_events": 0.934,
+      "r_precision": {
+        "precision": 0.7,
+        "recall": 0.7,
+        "f1": 0.7,
+        "tp": 7,
+        "fp": 3,
+        "fn": 3
+      }
+    },
+    "Cell sites down only": {
+      "auc_mean_over_events": 1.0,
+      "r_precision": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "tp": 10,
+        "fp": 0,
+        "fn": 0
+      }
+    }
+  },
+  "ablation": {
+    "Final method": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.947,
+      "tp": 9,
+      "fp": 0,
+      "residual_auc": 0.934,
+      "flagged": [
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "count posts instead of authors": {
+      "precision": 0.833,
+      "recall": 1.0,
+      "f1": 0.909,
+      "tp": 10,
+      "fp": 2,
+      "residual_auc": 0.962,
+      "flagged": [
+        "Alappuzha",
+        "Dolakha",
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Rasuwa",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "keep reposts, copies and spam": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "tp": 9,
+      "fp": 1,
+      "residual_auc": 0.911,
+      "flagged": [
+        "Alappuzha",
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Rasuwa",
+        "Sindhupalchok",
+        "Utuado",
+        "Yabucoa"
+      ]
+    },
+    "count voices ABOUT (any author location)": {
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.571,
+      "tp": 4,
+      "fp": 0,
+      "residual_auc": 0.879,
+      "flagged": [
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Vieques"
+      ]
+    },
+    "supplied baseline instead of empirical": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.947,
+      "tp": 9,
+      "fp": 0,
+      "residual_auc": 0.914,
+      "flagged": [
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Rasuwa",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "no local baseline (regional average)": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "tp": 9,
+      "fp": 1,
+      "residual_auc": 0.99,
+      "flagged": [
+        "Alappuzha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Rasuwa",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "size gate (expected need) instead of severity gate": {
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.571,
+      "tp": 4,
+      "fp": 0,
+      "residual_auc": 0.64,
+      "flagged": [
+        "Gorkha",
+        "Humacao",
+        "Pathanamthitta",
+        "Sindhupalchok"
+      ]
+    },
+    "fixed theta = 10": {
+      "precision": 1.0,
+      "recall": 0.7,
+      "f1": 0.824,
+      "tp": 7,
+      "fp": 0,
+      "residual_auc": 1.0,
+      "flagged": [
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "no peer surge factor": {
+      "precision": 0.909,
+      "recall": 1.0,
+      "f1": 0.952,
+      "tp": 10,
+      "fp": 1,
+      "residual_auc": 0.935,
+      "flagged": [
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Rasuwa",
+        "San Juan",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "no confounder screen": {
+      "precision": 0.909,
+      "recall": 1.0,
+      "f1": 0.952,
+      "tp": 10,
+      "fp": 1,
+      "residual_auc": 0.934,
+      "flagged": [
+        "Alappuzha",
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Rasuwa",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "no corroboration filter": {
+      "precision": 0.9,
+      "recall": 0.9,
+      "f1": 0.9,
+      "tp": 9,
+      "fp": 1,
+      "residual_auc": 0.934,
+      "flagged": [
+        "Ernakulam",
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "Detector A only": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.667,
+      "tp": 5,
+      "fp": 0,
+      "residual_auc": 0.934,
+      "flagged": [
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Utuado"
+      ]
+    },
+    "Detector B only": {
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.667,
+      "tp": 5,
+      "fp": 0,
+      "residual_auc": 0.934,
+      "flagged": [
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Utuado",
+        "Yabucoa"
+      ]
+    },
+    "Detector F only (fusion)": {
+      "precision": 1.0,
+      "recall": 0.9,
+      "f1": 0.947,
+      "tp": 9,
+      "fp": 0,
+      "residual_auc": 0.934,
+      "flagged": [
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Pathanamthitta",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    },
+    "Evidence only: outage evidence + severity, no social signal": {
+      "precision": 0.588,
+      "recall": 1.0,
+      "f1": 0.741,
+      "tp": 10,
+      "fp": 7,
+      "residual_auc": 0.934,
+      "flagged": [
+        "Alappuzha",
+        "Caguas",
+        "Carolina",
+        "Dolakha",
+        "Fajardo",
+        "Gorkha",
+        "Guayama",
+        "Humacao",
+        "Idukki",
+        "Nuwakot",
+        "Pathanamthitta",
+        "Rasuwa",
+        "San Juan",
+        "Sindhupalchok",
+        "Utuado",
+        "Vieques",
+        "Yabucoa"
+      ]
+    }
+  },
+  "sensitivity": {
+    "configs": 36,
+    "f1_median": 0.9,
+    "f1_min": 0.706,
+    "f1_max": 0.947,
+    "share_f1_ge_0.8": 0.667
+  },
+  "detectability_true_silent": [
+    {
+      "event": "Nepal 2015",
+      "unit_name": "Gorkha",
+      "mu": 18.87,
+      "observed": 13.0,
+      "observed_drop": 0.31,
+      "min_detectable_drop": 0.46,
+      "flag": true
+    },
+    {
+      "event": "Nepal 2015",
+      "unit_name": "Sindhupalchok",
+      "mu": 16.12,
+      "observed": 10.0,
+      "observed_drop": 0.38,
+      "min_detectable_drop": 0.5,
+      "flag": true
+    },
+    {
+      "event": "Nepal 2015",
+      "unit_name": "Rasuwa",
+      "mu": 3.15,
+      "observed": 3.0,
+      "observed_drop": 0.05,
+      "min_detectable_drop": 1.0,
+      "flag": false
+    },
+    {
+      "event": "Maria 2017",
+      "unit_name": "Humacao",
+      "mu": 23.97,
+      "observed": 9.0,
+      "observed_drop": 0.62,
+      "min_detectable_drop": 0.41,
+      "flag": true
+    },
+    {
+      "event": "Maria 2017",
+      "unit_name": "Yabucoa",
+      "mu": 9.52,
+      "observed": 3.0,
+      "observed_drop": 0.68,
+      "min_detectable_drop": 0.65,
+      "flag": true
+    },
+    {
+      "event": "Maria 2017",
+      "unit_name": "Utuado",
+      "mu": 6.34,
+      "observed": 0.0,
+      "observed_drop": 1.0,
+      "min_detectable_drop": 0.79,
+      "flag": true
+    },
+    {
+      "event": "Maria 2017",
+      "unit_name": "Guayama",
+      "mu": 14.8,
+      "observed": 6.0,
+      "observed_drop": 0.59,
+      "min_detectable_drop": 0.52,
+      "flag": true
+    },
+    {
+      "event": "Maria 2017",
+      "unit_name": "Vieques",
+      "mu": 4.93,
+      "observed": 2.0,
+      "observed_drop": 0.59,
+      "min_detectable_drop": 0.9,
+      "flag": true
+    },
+    {
+      "event": "Kerala 2018",
+      "unit_name": "Pathanamthitta",
+      "mu": 41.88,
+      "observed": 19.0,
+      "observed_drop": 0.55,
+      "min_detectable_drop": 0.31,
+      "flag": true
+    },
+    {
+      "event": "Kerala 2018",
+      "unit_name": "Idukki",
+      "mu": 33.5,
+      "observed": 10.0,
+      "observed_drop": 0.7,
+      "min_detectable_drop": 0.35,
+      "flag": true
+    }
+  ],
+  "loudness_bias": {
+    "Nepal 2015": {
+      "spearman_volume_vs_baseline": 0.903,
+      "spearman_volume_vs_expected_need": 0.433,
+      "spearman_volume_vs_damage_ratio": -0.042,
+      "silent_zones_in_volume_top_half": 0,
+      "true_silent_zones": 3,
+      "share_of_need_posts_from_silent_zones": 0.012,
+      "share_of_expected_need_in_silent_zones": 0.312
+    },
+    "Maria 2017": {
+      "spearman_volume_vs_baseline": 0.956,
+      "spearman_volume_vs_expected_need": 0.714,
+      "spearman_volume_vs_damage_ratio": -0.282,
+      "silent_zones_in_volume_top_half": 0,
+      "true_silent_zones": 5,
+      "share_of_need_posts_from_silent_zones": 0.014,
+      "share_of_expected_need_in_silent_zones": 0.203
+    },
+    "Kerala 2018": {
+      "spearman_volume_vs_baseline": 0.916,
+      "spearman_volume_vs_expected_need": 0.051,
+      "spearman_volume_vs_damage_ratio": -0.172,
+      "silent_zones_in_volume_top_half": 0,
+      "true_silent_zones": 2,
+      "share_of_need_posts_from_silent_zones": 0.007,
+      "share_of_expected_need_in_silent_zones": 0.149
+    }
+  },
+  "cooccurrence": {
+    "telecom+missing": {
+      "posts": 358,
+      "lift": 4.61
+    },
+    "telecom+safety": {
+      "posts": 102,
+      "lift": 2.83
+    },
+    "medical+power": {
+      "posts": 271,
+      "lift": 2.04
+    },
+    "power+telecom": {
+      "posts": 143,
+      "lift": 1.93
+    },
+    "shelter+food": {
+      "posts": 279,
+      "lift": 1.75
+    },
+    "medical+road": {
+      "posts": 128,
+      "lift": 1.6
+    },
+    "power+safety": {
+      "posts": 51,
+      "lift": 1.59
+    },
+    "shelter+safety": {
+      "posts": 81,
+      "lift": 1.35
+    },
+    "water+food": {
+      "posts": 93,
+      "lift": 0.86
+    },
+    "medical+water": {
+      "posts": 144,
+      "lift": 0.85
+    },
+    "power+missing": {
+      "posts": 55,
+      "lift": 0.8
+    },
+    "rescue+missing": {
+      "posts": 143,
+      "lift": 0.76
+    },
+    "rescue+medical": {
+      "posts": 236,
+      "lift": 0.65
+    },
+    "shelter+water": {
+      "posts": 89,
+      "lift": 0.57
+    },
+    "medical+food": {
+      "posts": 71,
+      "lift": 0.41
+    },
+    "medical+shelter": {
+      "posts": 71,
+      "lift": 0.28
+    }
+  },
+  "echo_signal": {
+    "mean_echo_share_true_silent": 0.535,
+    "mean_echo_share_other": 0.208,
+    "auc_mean_over_events": 0.602
+  },
+  "network": {
+    "Nepal 2015": {
+      "amplification_nodes": 644,
+      "amplification_edges": 628,
+      "largest_component_share": 0.761,
+      "gini_in_degree": 0.777,
+      "top20_share_of_reposts": 0.314,
+      "gini_reposts_by_unit": 0.83,
+      "spearman_reposts_vs_baseline": 0.859,
+      "reposts_to_true_silent_zones_share": 0.008,
+      "coordination_nodes": 6,
+      "coordination_edges": 14,
+      "coordination_clusters_ge3": 1,
+      "coordination_cluster_bot_precision": 1.0,
+      "coordination_cluster_bot_recall": 1.0,
+      "top_amplified_authors_type": {
+        "local": 20
+      }
+    },
+    "Maria 2017": {
+      "amplification_nodes": 882,
+      "amplification_edges": 940,
+      "largest_component_share": 0.815,
+      "gini_in_degree": 0.761,
+      "top20_share_of_reposts": 0.232,
+      "gini_reposts_by_unit": 0.695,
+      "spearman_reposts_vs_baseline": 0.947,
+      "reposts_to_true_silent_zones_share": 0.012,
+      "coordination_nodes": 6,
+      "coordination_edges": 13,
+      "coordination_clusters_ge3": 1,
+      "coordination_cluster_bot_precision": 1.0,
+      "coordination_cluster_bot_recall": 1.0,
+      "top_amplified_authors_type": {
+        "local": 20
+      }
+    },
+    "Kerala 2018": {
+      "amplification_nodes": 1000,
+      "amplification_edges": 993,
+      "largest_component_share": 0.776,
+      "gini_in_degree": 0.753,
+      "top20_share_of_reposts": 0.221,
+      "gini_reposts_by_unit": 0.507,
+      "spearman_reposts_vs_baseline": 0.855,
+      "reposts_to_true_silent_zones_share": 0.007,
+      "coordination_nodes": 6,
+      "coordination_edges": 15,
+      "coordination_clusters_ge3": 1,
+      "coordination_cluster_bot_precision": 1.0,
+      "coordination_cluster_bot_recall": 1.0,
+      "top_amplified_authors_type": {
+        "local": 20
+      }
+    }
+  }
+}

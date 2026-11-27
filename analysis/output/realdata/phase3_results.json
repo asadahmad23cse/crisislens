@@ -1,0 +1,185 @@
+{
+  "phase": 3,
+  "label": "partial",
+  "preregistration": "analysis/PREREGISTRATION.md",
+  "test": "Does located tweet volume follow district population on real HumAID tweets?",
+  "events": [
+    {
+      "event": "Hurricane Maria 2017",
+      "tweets": 7278,
+      "located": 332,
+      "located_share": 0.046,
+      "spearman_rho_volume_vs_population": 0.031,
+      "p_value": 0.9164,
+      "h1_sign_positive": true,
+      "h1_supported_at_p05": false,
+      "top_district": "San Juan",
+      "top_district_share_of_located": 0.485,
+      "districts_with_zero_tweets": 1,
+      "districts": [
+        {
+          "district": "San Juan",
+          "population": 395326,
+          "located_tweets": 161
+        },
+        {
+          "district": "Carolina",
+          "population": 176762,
+          "located_tweets": 45
+        },
+        {
+          "district": "Arecibo",
+          "population": 96440,
+          "located_tweets": 38
+        },
+        {
+          "district": "Vieques",
+          "population": 9301,
+          "located_tweets": 37
+        },
+        {
+          "district": "Utuado",
+          "population": 33149,
+          "located_tweets": 12
+        },
+        {
+          "district": "Yabucoa",
+          "population": 37941,
+          "located_tweets": 7
+        },
+        {
+          "district": "Guayama",
+          "population": 45362,
+          "located_tweets": 6
+        },
+        {
+          "district": "Humacao",
+          "population": 58466,
+          "located_tweets": 5
+        },
+        {
+          "district": "Fajardo",
+          "population": 36993,
+          "located_tweets": 5
+        },
+        {
+          "district": "Bayamon",
+          "population": 208116,
+          "located_tweets": 5
+        },
+        {
+          "district": "Ponce",
+          "population": 166327,
+          "located_tweets": 4
+        },
+        {
+          "district": "Caguas",
+          "population": 142893,
+          "located_tweets": 4
+        },
+        {
+          "district": "Aguadilla",
+          "population": 60949,
+          "located_tweets": 3
+        },
+        {
+          "district": "Mayaguez",
+          "population": 89080,
+          "located_tweets": 0
+        }
+      ]
+    },
+    {
+      "event": "Kerala floods 2018",
+      "tweets": 7984,
+      "located": 875,
+      "located_share": 0.11,
+      "spearman_rho_volume_vs_population": -0.046,
+      "p_value": 0.8751,
+      "h1_sign_positive": false,
+      "h1_supported_at_p05": false,
+      "top_district": "Ernakulam",
+      "top_district_share_of_located": 0.304,
+      "districts_with_zero_tweets": 0,
+      "districts": [
+        {
+          "district": "Ernakulam",
+          "population": 3282388,
+          "located_tweets": 266
+        },
+        {
+          "district": "Alappuzha",
+          "population": 2127789,
+          "located_tweets": 182
+        },
+        {
+          "district": "Pathanamthitta",
+          "population": 1197412,
+          "located_tweets": 71
+        },
+        {
+          "district": "Thrissur",
+          "population": 3121200,
+          "located_tweets": 71
+        },
+        {
+          "district": "Wayanad",
+          "population": 817420,
+          "located_tweets": 62
+        },
+        {
+          "district": "Thiruvananthapuram",
+          "population": 3301427,
+          "located_tweets": 45
+        },
+        {
+          "district": "Idukki",
+          "population": 1108974,
+          "located_tweets": 40
+        },
+        {
+          "district": "Kottayam",
+          "population": 1974551,
+          "located_tweets": 27
+        },
+        {
+          "district": "Palakkad",
+          "population": 2809934,
+          "located_tweets": 27
+        },
+        {
+          "district": "Kannur",
+          "population": 2523003,
+          "located_tweets": 21
+        },
+        {
+          "district": "Kollam",
+          "population": 2635375,
+          "located_tweets": 20
+        },
+        {
+          "district": "Malappuram",
+          "population": 4112920,
+          "located_tweets": 20
+        },
+        {
+          "district": "Kozhikode",
+          "population": 3086293,
+          "located_tweets": 16
+        },
+        {
+          "district": "Kasaragod",
+          "population": 1307375,
+          "located_tweets": 7
+        }
+      ]
+    }
+  ],
+  "conclusion": "Not supported. The correlation between located tweet volume and population is near zero and not significant in either event. In this filtered sample, mentions follow where the news was, not population size.",
+  "not_tested": "Real Silent Zone detection: no pre-event baseline, no author locations, and no reachable outage truth (NASA needs an account; FCC site unreachable).",
+  "limits": [
+    "HumAID is a filtered, labelled sample, not all tweets.",
+    "Only the 14 districts per event in the gazetteer can be located.",
+    "Volume following population does not show that quiet districts were cut off."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "phase1": "completed_with_optional_transformer_deferred",
+  "phase2": "blocked_earthdata_authentication",
+  "phases3_to6": "not_started",
+  "source": "https://ladsweb.modaps.eosdis.nasa.gov/learn/download-files-using-edl-tokens/",
+  "night_light_values": null,
+  "outage_values": null,
+  "camp_values": null,
+  "generator_available": false
+}

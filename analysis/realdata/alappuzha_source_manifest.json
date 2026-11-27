@@ -1,0 +1,63 @@
+{
+  "created_local_date": "2026-11-26",
+  "zone_dataset": {
+    "path": "zones.csv",
+    "row_count": 93,
+    "geometry": "Survey of India Kerala village boundary layer reprojected to EPSG:4326",
+    "identifier": "Survey of India Vill_LGD, exposed as LGD code rather than Census code",
+    "boundary_effective_date": null,
+    "source_processing_metadata_date": "2024-11-08",
+    "current_village_roster_url": "https://alappuzha.nic.in/en/villages/",
+    "survey_of_india_download_url": "https://surveyofindia.gov.in/documents/KERALA.zip",
+    "survey_of_india_landing_page": "https://surveyofindia.gov.in/pages/village-boundary-data-base-of-entire-india",
+    "survey_of_india_archive_sha256": "d022f7ac68639b1c4ce663bd95eaf3130f72a61502ff75d46b1122bee141d32c",
+    "survey_of_india_archive_bytes": 4182966,
+    "build_script": "analysis/realdata/build_alappuzha_zones.py"
+  },
+  "flood_evidence": {
+    "path": "analysis/realdata/alappuzha_2018_flood_impact_evidence.csv",
+    "row_count": 20,
+    "report_landing_page": "https://alappuzha.nic.in/en/document/flood-report-2018/",
+    "report_pdf_url": "https://cdn.s3waas.gov.in/s3fe9fc289c3ff0af142b6d3bead98a923/uploads/2019/08/2019080991.pdf",
+    "report_pdf_sha256": "71e31fbfbeddd01879be118cf879a875b7adb36bd50aef7f6c29c639c372c79d",
+    "report_pdf_bytes": 4002774,
+    "impact_resolution": "qualitative named locality/taluk and district totals; not a complete village damage dataset",
+    "additional_remote_sensing_observation": {
+      "source_url": "https://www.iirs.gov.in/iirs/sites/default/files/upload/document/Kerala_Flood_Sep18a.pdf",
+      "institution": "Indian Institute of Remote Sensing (ISRO)",
+      "observation_date": "2018-08-21",
+      "district": "Alappuzha",
+      "inundated_area_km2": 272,
+      "spatial_resolution": "district aggregate only; not allocated to villages or taluks"
+    }
+  },
+  "presentation_prototype": {
+    "path": "src/lib/crisislens/data/alappuzha-prototype.json",
+    "builder": "analysis/realdata/build_alappuzha_prototype.py",
+    "village_count": 93,
+    "boundary_geometry": "Sourced current Survey of India village polygons; 2018 concordance unverified",
+    "scenario_values": "Synthetic deterministic illustration: impact index, baseline, local author/post counts, digital access proxy, location-confidence proxy, and candidate scores",
+    "observed_research_result": false,
+    "synthetic_candidate_count": 7,
+    "scenario_rules": [
+      "Synthetic baseline authors/day are generated deterministically and are not observed platform activity.",
+      "Synthetic expected event voices = baseline authors/day × (1 + 1.8 × modeled impact index) × a 5-day illustrative window.",
+      "Synthetic observed voices use a deterministic activity multiplier that partly varies with a synthetic digital-access proxy.",
+      "Illustrative gap score = modeled impact index × (1 − simulated observed/expected voices), scaled 0–100.",
+      "Candidate rule for this demo: impact index ≥75 and simulated observed voices ≤40% of modeled expectation; not a calibrated threshold."
+    ]
+  },
+  "census_2011_source_review": {
+    "catalog_url": "https://www.censusindia.gov.in/nada/index.php/catalog/642",
+    "download_url": "https://censusindia.gov.in/nada/index.php/catalog/642/download/2217/DH_2011_3211-Alappuzha.zip",
+    "archive_sha256": "cfe49f631ac9a4d3a9b7b5b1ca3ad85db2ceafd4bd601334d82b9e50d8958a9b",
+    "archive_bytes": 559299,
+    "use_in_zones": false,
+    "derived_crosswalk": "analysis/realdata/alappuzha_census2011_population.csv",
+    "derived_crosswalk_rows": 93,
+    "exact_code_matches": 85,
+    "current_zones_left_null": 8,
+    "source_census_units_without_current_zone_match": 5,
+    "reason": "Census 2011 population and area are kept in a separate historical covariate file; a code match does not establish that 2011, 2018, and current polygon boundaries are identical."
+  }
+}

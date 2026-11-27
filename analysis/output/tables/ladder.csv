@@ -1,0 +1,8 @@
+,precision,recall,f1,tp,fp,fn
+"1 Prototype as built (supplied baseline, need posts, v1 constants)",0.8,0.4,0.533,4.0,1.0,6.0
+2 + empirical baseline & 'voices from' counting,1.0,0.1,0.182,1.0,0.0,9.0
+"3 + v2 calibration (fitted theta, peer surge, severity gate)",0.667,0.6,0.632,6.0,3.0,4.0
+4 + zero-need-voice rule (Z),0.7,0.7,0.7,7.0,3.0,3.0
+5 + evacuation / data-gap screen,0.857,0.6,0.706,6.0,1.0,4.0
+6 + corroboration required (night lights / cell sites),1.0,0.6,0.75,6.0,0.0,4.0
+7 + fusion rule F = final method,1.0,0.9,0.947,9.0,0.0,1.0

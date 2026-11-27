@@ -1,0 +1,705 @@
+{
+  "phase1": {
+    "rows": [
+      {
+        "domain": "real",
+        "event": "hurricane_maria_2017",
+        "target": "restricted",
+        "model": "v1",
+        "event_rows": 7278,
+        "coverage": 0.24512228634240177,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 6,
+        "precision": 0.6528925619834711,
+        "recall": 0.2814726840855107,
+        "f1": 0.3933609958506224,
+        "n": 1784,
+        "positives": 842,
+        "tp": 237,
+        "fp": 126,
+        "fn": 605
+      },
+      {
+        "domain": "real",
+        "event": "hurricane_maria_2017",
+        "target": "restricted",
+        "model": "v2",
+        "event_rows": 7278,
+        "coverage": 0.24512228634240177,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 6,
+        "precision": 0.8115942028985508,
+        "recall": 0.1995249406175772,
+        "f1": 0.3203050524308866,
+        "n": 1784,
+        "positives": 842,
+        "tp": 168,
+        "fp": 39,
+        "fn": 674
+      },
+      {
+        "domain": "real",
+        "event": "hurricane_maria_2017",
+        "target": "restricted",
+        "model": "tfidf_lr",
+        "event_rows": 7278,
+        "coverage": 0.24512228634240177,
+        "training_rows": 20057,
+        "training_overlap_rows_removed": 6,
+        "precision": 0.895870736086176,
+        "recall": 0.5926365795724465,
+        "f1": 0.7133666904932094,
+        "n": 1784,
+        "positives": 842,
+        "tp": 499,
+        "fp": 58,
+        "fn": 343
+      },
+      {
+        "domain": "real",
+        "event": "kerala_floods_2018",
+        "target": "restricted",
+        "model": "v1",
+        "event_rows": 7984,
+        "coverage": 0.24261022044088176,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.5720279720279721,
+        "recall": 0.6331269349845201,
+        "f1": 0.6010286554004408,
+        "n": 1937,
+        "positives": 646,
+        "tp": 409,
+        "fp": 306,
+        "fn": 237
+      },
+      {
+        "domain": "real",
+        "event": "kerala_floods_2018",
+        "target": "restricted",
+        "model": "v2",
+        "event_rows": 7984,
+        "coverage": 0.24261022044088176,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.8312020460358056,
+        "recall": 0.5030959752321982,
+        "f1": 0.626808100289296,
+        "n": 1937,
+        "positives": 646,
+        "tp": 325,
+        "fp": 66,
+        "fn": 321
+      },
+      {
+        "domain": "real",
+        "event": "kerala_floods_2018",
+        "target": "restricted",
+        "model": "tfidf_lr",
+        "event_rows": 7984,
+        "coverage": 0.24261022044088176,
+        "training_rows": 19907,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.9150485436893204,
+        "recall": 0.5835913312693498,
+        "f1": 0.7126654064272212,
+        "n": 1937,
+        "positives": 646,
+        "tp": 377,
+        "fp": 35,
+        "fn": 269
+      },
+      {
+        "domain": "simulated",
+        "event": "kerala_flood_2018",
+        "target": "gold_relevance",
+        "model": "v1",
+        "event_rows": 10067,
+        "coverage": 1.0,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.6586693548387097,
+        "recall": 0.8503383654346695,
+        "f1": 0.7423312883435583,
+        "n": 10067,
+        "positives": 3842,
+        "tp": 3267,
+        "fp": 1693,
+        "fn": 575
+      },
+      {
+        "domain": "simulated",
+        "event": "kerala_flood_2018",
+        "target": "gold_relevance",
+        "model": "v2",
+        "event_rows": 10067,
+        "coverage": 1.0,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 10067,
+        "positives": 3842,
+        "tp": 3842,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "domain": "simulated",
+        "event": "kerala_flood_2018",
+        "target": "gold_relevance",
+        "model": "tfidf_lr",
+        "event_rows": 10067,
+        "coverage": 1.0,
+        "training_rows": 13320,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.7402597402597403,
+        "recall": 0.9791775117126497,
+        "f1": 0.8431196772747647,
+        "n": 10067,
+        "positives": 3842,
+        "tp": 3762,
+        "fp": 1320,
+        "fn": 80
+      },
+      {
+        "domain": "simulated",
+        "event": "maria_2017",
+        "target": "gold_relevance",
+        "model": "v1",
+        "event_rows": 7303,
+        "coverage": 1.0,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.678727226071337,
+        "recall": 0.8115986498926051,
+        "f1": 0.7392397987702627,
+        "n": 7303,
+        "positives": 3259,
+        "tp": 2645,
+        "fp": 1252,
+        "fn": 614
+      },
+      {
+        "domain": "simulated",
+        "event": "maria_2017",
+        "target": "gold_relevance",
+        "model": "v2",
+        "event_rows": 7303,
+        "coverage": 1.0,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 7303,
+        "positives": 3259,
+        "tp": 3259,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "domain": "simulated",
+        "event": "maria_2017",
+        "target": "gold_relevance",
+        "model": "tfidf_lr",
+        "event_rows": 7303,
+        "coverage": 1.0,
+        "training_rows": 16084,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.7740431795878312,
+        "recall": 0.9680883706658484,
+        "f1": 0.8602590320381731,
+        "n": 7303,
+        "positives": 3259,
+        "tp": 3155,
+        "fp": 921,
+        "fn": 104
+      },
+      {
+        "domain": "simulated",
+        "event": "nepal_eq_2015",
+        "target": "gold_relevance",
+        "model": "v1",
+        "event_rows": 6017,
+        "coverage": 1.0,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 0.6535107847636531,
+        "recall": 0.6251097453906936,
+        "f1": 0.6389948395781916,
+        "n": 6017,
+        "positives": 2278,
+        "tp": 1424,
+        "fp": 755,
+        "fn": 854
+      },
+      {
+        "domain": "simulated",
+        "event": "nepal_eq_2015",
+        "target": "gold_relevance",
+        "model": "v2",
+        "event_rows": 6017,
+        "coverage": 1.0,
+        "training_rows": 0,
+        "training_overlap_rows_removed": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "n": 6017,
+        "positives": 2278,
+        "tp": 2278,
+        "fp": 0,
+        "fn": 0
+      },
+      {
+        "domain": "simulated",
+        "event": "nepal_eq_2015",
+        "target": "gold_relevance",
+        "model": "tfidf_lr",
+        "event_rows": 6017,
+        "coverage": 1.0,
+        "training_rows": 17370,
+        "training_overlap_rows_removed": 0,
+        "precision": 1.0,
+        "recall": 0.9244951712028094,
+        "f1": 0.9607664233576643,
+        "n": 6017,
+        "positives": 2278,
+        "tp": 2106,
+        "fp": 0,
+        "fn": 172
+      }
+    ],
+    "posts": 76484,
+    "limitations": [
+      "Restricted relevance is a partial class-derived proxy, not an unmet-need gold label.",
+      "Broad humanitarian relevance differs from CrisisLens need relevance.",
+      "No exhaustive ten-need or urgency gold; only three positive topic-proxy hit rates.",
+      "HumAID contains English posts only and is not a representative municipal stream.",
+      "Simulation v2 was tuned on the simulation being scored.",
+      "Training excludes normalized exact held-out overlaps, not every near-duplicate."
+    ],
+    "transformer": {
+      "status": "not_run",
+      "reason": "No suitable cached multilingual encoder; no CUDA; model download needs approval."
+    }
+  },
+  "evidence": {
+    "phase": 2,
+    "status": "blocked",
+    "real_values_collected": 0,
+    "sources": [
+      {
+        "name": "NASA Black Marble VNP46A2 night lights",
+        "status": "blocked",
+        "reason": "Download needs a NASA Earthdata account, which the team must create.",
+        "next_step": "See analysis/realdata/PHASE2_ACCESS.md"
+      },
+      {
+        "name": "FCC communications status reports, Hurricane Maria (e.g. DOC-346860A1, 22 Sep 2017)",
+        "status": "blocked",
+        "reason": "docs.fcc.gov and apps.fcc.gov could not be reached from this machine (page reader, direct request and browser all failed).",
+        "next_step": "Download the PDFs manually into analysis/realdata/private/fcc/ and rerun."
+      },
+      {
+        "name": "Official evacuation and relief-camp counts (Kerala, Puerto Rico)",
+        "status": "not used",
+        "reason": "The figures found describe dates after the 72-hour window, so they are context only and were not compared with the simulated evidence."
+      }
+    ],
+    "note": "No real evidence value has been entered or imputed. The simulated evidence sheet is unchanged."
+  },
+  "uncertainty": {
+    "phase": 4,
+    "seed": 2026,
+    "bootstrap_draws": 5000,
+    "method_note": "Frozen final method and original prototype; no thresholds or rules changed.",
+    "bootstrap": {
+      "final_method": {
+        "precision": {
+          "point": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "undefined_draws": 1
+        },
+        "recall": {
+          "point": 0.9,
+          "ci_low": 0.667,
+          "ci_high": 1.0,
+          "undefined_draws": 1
+        },
+        "f1": {
+          "point": 0.947,
+          "ci_low": 0.8,
+          "ci_high": 1.0,
+          "undefined_draws": 1
+        }
+      },
+      "prototype_v1": {
+        "precision": {
+          "point": 0.8,
+          "ci_low": 0.333,
+          "ci_high": 1.0,
+          "undefined_draws": 21
+        },
+        "recall": {
+          "point": 0.4,
+          "ci_low": 0.1,
+          "ci_high": 0.714,
+          "undefined_draws": 1
+        },
+        "f1": {
+          "point": 0.533,
+          "ci_low": 0.167,
+          "ci_high": 0.8,
+          "undefined_draws": 0
+        }
+      },
+      "resampling": "districts resampled with replacement within each event"
+    },
+    "timeline": {
+      "hours": [
+        6,
+        12,
+        18,
+        24,
+        30,
+        36,
+        42,
+        48,
+        54,
+        60,
+        66,
+        72
+      ],
+      "per_hour": [
+        {
+          "hour": 6,
+          "found": 5,
+          "false_alarms": 1
+        },
+        {
+          "hour": 12,
+          "found": 9,
+          "false_alarms": 0
+        },
+        {
+          "hour": 18,
+          "found": 9,
+          "false_alarms": 0
+        },
+        {
+          "hour": 24,
+          "found": 9,
+          "false_alarms": 0
+        },
+        {
+          "hour": 30,
+          "found": 8,
+          "false_alarms": 0
+        },
+        {
+          "hour": 36,
+          "found": 8,
+          "false_alarms": 0
+        },
+        {
+          "hour": 42,
+          "found": 8,
+          "false_alarms": 1
+        },
+        {
+          "hour": 48,
+          "found": 8,
+          "false_alarms": 0
+        },
+        {
+          "hour": 54,
+          "found": 8,
+          "false_alarms": 0
+        },
+        {
+          "hour": 60,
+          "found": 8,
+          "false_alarms": 0
+        },
+        {
+          "hour": 66,
+          "found": 9,
+          "false_alarms": 0
+        },
+        {
+          "hour": 72,
+          "found": 9,
+          "false_alarms": 0
+        }
+      ],
+      "true_silent_zones": [
+        {
+          "unit": "Gorkha",
+          "event": "Nepal 2015",
+          "first_flag_hour": 6,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Sindhupalchok",
+          "event": "Nepal 2015",
+          "first_flag_hour": 6,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Humacao",
+          "event": "Maria 2017",
+          "first_flag_hour": 6,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Yabucoa",
+          "event": "Maria 2017",
+          "first_flag_hour": 6,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Idukki",
+          "event": "Kerala 2018",
+          "first_flag_hour": 6,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Utuado",
+          "event": "Maria 2017",
+          "first_flag_hour": 12,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Guayama",
+          "event": "Maria 2017",
+          "first_flag_hour": 12,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Vieques",
+          "event": "Maria 2017",
+          "first_flag_hour": 12,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Pathanamthitta",
+          "event": "Kerala 2018",
+          "first_flag_hour": 12,
+          "flagged_at_72h": true
+        },
+        {
+          "unit": "Rasuwa",
+          "event": "Nepal 2015",
+          "first_flag_hour": null,
+          "flagged_at_72h": false
+        }
+      ],
+      "districts_flagged_early_but_not_truly_silent": [
+        {
+          "unit": "Wayanad",
+          "event": "Kerala 2018",
+          "true_silent_zone": false,
+          "first_flag_hour": 6
+        },
+        {
+          "unit": "Alappuzha",
+          "event": "Kerala 2018",
+          "true_silent_zone": false,
+          "first_flag_hour": 42
+        }
+      ]
+    },
+    "blocked": {
+      "fresh_seed_check": "generate_dataset.py is not in the repository"
+    }
+  },
+  "silence": {
+    "phase": 3,
+    "label": "partial",
+    "preregistration": "analysis/PREREGISTRATION.md",
+    "test": "Does located tweet volume follow district population on real HumAID tweets?",
+    "events": [
+      {
+        "event": "Hurricane Maria 2017",
+        "tweets": 7278,
+        "located": 332,
+        "located_share": 0.046,
+        "spearman_rho_volume_vs_population": 0.031,
+        "p_value": 0.9164,
+        "h1_sign_positive": true,
+        "h1_supported_at_p05": false,
+        "top_district": "San Juan",
+        "top_district_share_of_located": 0.485,
+        "districts_with_zero_tweets": 1,
+        "districts": [
+          {
+            "district": "San Juan",
+            "population": 395326,
+            "located_tweets": 161
+          },
+          {
+            "district": "Carolina",
+            "population": 176762,
+            "located_tweets": 45
+          },
+          {
+            "district": "Arecibo",
+            "population": 96440,
+            "located_tweets": 38
+          },
+          {
+            "district": "Vieques",
+            "population": 9301,
+            "located_tweets": 37
+          },
+          {
+            "district": "Utuado",
+            "population": 33149,
+            "located_tweets": 12
+          },
+          {
+            "district": "Yabucoa",
+            "population": 37941,
+            "located_tweets": 7
+          },
+          {
+            "district": "Guayama",
+            "population": 45362,
+            "located_tweets": 6
+          },
+          {
+            "district": "Humacao",
+            "population": 58466,
+            "located_tweets": 5
+          },
+          {
+            "district": "Fajardo",
+            "population": 36993,
+            "located_tweets": 5
+          },
+          {
+            "district": "Bayamon",
+            "population": 208116,
+            "located_tweets": 5
+          },
+          {
+            "district": "Ponce",
+            "population": 166327,
+            "located_tweets": 4
+          },
+          {
+            "district": "Caguas",
+            "population": 142893,
+            "located_tweets": 4
+          },
+          {
+            "district": "Aguadilla",
+            "population": 60949,
+            "located_tweets": 3
+          },
+          {
+            "district": "Mayaguez",
+            "population": 89080,
+            "located_tweets": 0
+          }
+        ]
+      },
+      {
+        "event": "Kerala floods 2018",
+        "tweets": 7984,
+        "located": 875,
+        "located_share": 0.11,
+        "spearman_rho_volume_vs_population": -0.046,
+        "p_value": 0.8751,
+        "h1_sign_positive": false,
+        "h1_supported_at_p05": false,
+        "top_district": "Ernakulam",
+        "top_district_share_of_located": 0.304,
+        "districts_with_zero_tweets": 0,
+        "districts": [
+          {
+            "district": "Ernakulam",
+            "population": 3282388,
+            "located_tweets": 266
+          },
+          {
+            "district": "Alappuzha",
+            "population": 2127789,
+            "located_tweets": 182
+          },
+          {
+            "district": "Pathanamthitta",
+            "population": 1197412,
+            "located_tweets": 71
+          },
+          {
+            "district": "Thrissur",
+            "population": 3121200,
+            "located_tweets": 71
+          },
+          {
+            "district": "Wayanad",
+            "population": 817420,
+            "located_tweets": 62
+          },
+          {
+            "district": "Thiruvananthapuram",
+            "population": 3301427,
+            "located_tweets": 45
+          },
+          {
+            "district": "Idukki",
+            "population": 1108974,
+            "located_tweets": 40
+          },
+          {
+            "district": "Kottayam",
+            "population": 1974551,
+            "located_tweets": 27
+          },
+          {
+            "district": "Palakkad",
+            "population": 2809934,
+            "located_tweets": 27
+          },
+          {
+            "district": "Kannur",
+            "population": 2523003,
+            "located_tweets": 21
+          },
+          {
+            "district": "Kollam",
+            "population": 2635375,
+            "located_tweets": 20
+          },
+          {
+            "district": "Malappuram",
+            "population": 4112920,
+            "located_tweets": 20
+          },
+          {
+            "district": "Kozhikode",
+            "population": 3086293,
+            "located_tweets": 16
+          },
+          {
+            "district": "Kasaragod",
+            "population": 1307375,
+            "located_tweets": 7
+          }
+        ]
+      }
+    ],
+    "conclusion": "Not supported. The correlation between located tweet volume and population is near zero and not significant in either event. In this filtered sample, mentions follow where the news was, not population size.",
+    "not_tested": "Real Silent Zone detection: no pre-event baseline, no author locations, and no reachable outage truth (NASA needs an account; FCC site unreachable).",
+    "limits": [
+      "HumAID is a filtered, labelled sample, not all tweets.",
+      "Only the 14 districts per event in the gazetteer can be located.",
+      "Volume following population does not show that quiet districts were cut off."
+    ]
+  }
+}

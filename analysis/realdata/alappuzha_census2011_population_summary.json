@@ -1,0 +1,12 @@
+{
+  "current_zone_rows": 93,
+  "census_2011_units_in_source_tables": 90,
+  "exact_code_matches": 85,
+  "unmatched_current_zones": 8,
+  "boundary_year_for_current_zones": null,
+  "census_data_year": 2011,
+  "join_rule": "exact six-digit equality: Survey of India Vill_LGD to Census location code",
+  "population_density_method": "Census 2011 population divided by Census 2011 unit area; no current polygon area used",
+  "source_url": "https://www.censusindia.gov.in/nada/index.php/catalog/642",
+  "output": "analysis\\realdata\\alappuzha_census2011_population.csv"
+}

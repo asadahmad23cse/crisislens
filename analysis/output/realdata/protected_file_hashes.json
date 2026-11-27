@@ -1,0 +1,10 @@
+{
+  "CrisisLens_dataset_v1.xlsx": "3d4b253efd2b903f9f3d6cefd3cb1b3eeaad6b4c92343400f5dee9cbd5cae707",
+  "analysis/crisislens/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "analysis/crisislens/classify.py": "0c2c3a079bc78e6bcc9f2a32435c1392a94346e6bcaa16a771b054caf173d36d",
+  "analysis/crisislens/data.py": "f221e85d35051a3316bfbbf4fa6cb75750420ddf49dc38420a6856f3ddc0f668",
+  "analysis/crisislens/dedupe.py": "d916ab6f005c5df000c0feafeca93adca8a494c60611ba7d7a452f8f679c0510",
+  "analysis/crisislens/geoparse.py": "be0d3f12cce927bd98ce565676265a3c17870183f07175fad8c82b4d4fa162db",
+  "analysis/crisislens/network.py": "01b8f8d1c74e4952077c6a871f3d4aad0d0e8857317171ca3850625b204a0305",
+  "analysis/crisislens/pipeline.py": "4900a68a60b0a5815adf0da50fcb159b8f8b1d65df42d0776d1a6148810fad63"
+}

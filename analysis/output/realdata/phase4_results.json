@@ -1,0 +1,206 @@
+{
+  "phase": 4,
+  "seed": 2026,
+  "bootstrap_draws": 5000,
+  "method_note": "Frozen final method and original prototype; no thresholds or rules changed.",
+  "bootstrap": {
+    "final_method": {
+      "precision": {
+        "point": 1.0,
+        "ci_low": 1.0,
+        "ci_high": 1.0,
+        "undefined_draws": 1
+      },
+      "recall": {
+        "point": 0.9,
+        "ci_low": 0.667,
+        "ci_high": 1.0,
+        "undefined_draws": 1
+      },
+      "f1": {
+        "point": 0.947,
+        "ci_low": 0.8,
+        "ci_high": 1.0,
+        "undefined_draws": 1
+      }
+    },
+    "prototype_v1": {
+      "precision": {
+        "point": 0.8,
+        "ci_low": 0.333,
+        "ci_high": 1.0,
+        "undefined_draws": 21
+      },
+      "recall": {
+        "point": 0.4,
+        "ci_low": 0.1,
+        "ci_high": 0.714,
+        "undefined_draws": 1
+      },
+      "f1": {
+        "point": 0.533,
+        "ci_low": 0.167,
+        "ci_high": 0.8,
+        "undefined_draws": 0
+      }
+    },
+    "resampling": "districts resampled with replacement within each event"
+  },
+  "timeline": {
+    "hours": [
+      6,
+      12,
+      18,
+      24,
+      30,
+      36,
+      42,
+      48,
+      54,
+      60,
+      66,
+      72
+    ],
+    "per_hour": [
+      {
+        "hour": 6,
+        "found": 5,
+        "false_alarms": 1
+      },
+      {
+        "hour": 12,
+        "found": 9,
+        "false_alarms": 0
+      },
+      {
+        "hour": 18,
+        "found": 9,
+        "false_alarms": 0
+      },
+      {
+        "hour": 24,
+        "found": 9,
+        "false_alarms": 0
+      },
+      {
+        "hour": 30,
+        "found": 8,
+        "false_alarms": 0
+      },
+      {
+        "hour": 36,
+        "found": 8,
+        "false_alarms": 0
+      },
+      {
+        "hour": 42,
+        "found": 8,
+        "false_alarms": 1
+      },
+      {
+        "hour": 48,
+        "found": 8,
+        "false_alarms": 0
+      },
+      {
+        "hour": 54,
+        "found": 8,
+        "false_alarms": 0
+      },
+      {
+        "hour": 60,
+        "found": 8,
+        "false_alarms": 0
+      },
+      {
+        "hour": 66,
+        "found": 9,
+        "false_alarms": 0
+      },
+      {
+        "hour": 72,
+        "found": 9,
+        "false_alarms": 0
+      }
+    ],
+    "true_silent_zones": [
+      {
+        "unit": "Gorkha",
+        "event": "Nepal 2015",
+        "first_flag_hour": 6,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Sindhupalchok",
+        "event": "Nepal 2015",
+        "first_flag_hour": 6,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Humacao",
+        "event": "Maria 2017",
+        "first_flag_hour": 6,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Yabucoa",
+        "event": "Maria 2017",
+        "first_flag_hour": 6,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Idukki",
+        "event": "Kerala 2018",
+        "first_flag_hour": 6,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Utuado",
+        "event": "Maria 2017",
+        "first_flag_hour": 12,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Guayama",
+        "event": "Maria 2017",
+        "first_flag_hour": 12,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Vieques",
+        "event": "Maria 2017",
+        "first_flag_hour": 12,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Pathanamthitta",
+        "event": "Kerala 2018",
+        "first_flag_hour": 12,
+        "flagged_at_72h": true
+      },
+      {
+        "unit": "Rasuwa",
+        "event": "Nepal 2015",
+        "first_flag_hour": null,
+        "flagged_at_72h": false
+      }
+    ],
+    "districts_flagged_early_but_not_truly_silent": [
+      {
+        "unit": "Wayanad",
+        "event": "Kerala 2018",
+        "true_silent_zone": false,
+        "first_flag_hour": 6
+      },
+      {
+        "unit": "Alappuzha",
+        "event": "Kerala 2018",
+        "true_silent_zone": false,
+        "first_flag_hour": 42
+      }
+    ]
+  },
+  "blocked": {
+    "fresh_seed_check": "generate_dataset.py is not in the repository"
+  }
+}

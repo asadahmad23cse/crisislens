@@ -1,0 +1,7 @@
+,auc_mean_over_events,r_precision
+Loudness dashboard: most need posts,0.051,"{'precision': 0.0, 'recall': 0.0, 'f1': 0.0, 'tp': 0, 'fp': 10, 'fn': 10}"
+Inverse volume: fewest need posts,0.949,"{'precision': 0.8, 'recall': 0.8, 'f1': 0.8, 'tp': 8, 'fp': 2, 'fn': 2}"
+Exposure only: highest expected need,0.482,"{'precision': 0.2, 'recall': 0.2, 'f1': 0.2, 'tp': 2, 'fp': 8, 'fn': 8}"
+Social residual only (final method's score),0.914,"{'precision': 0.7, 'recall': 0.7, 'f1': 0.7, 'tp': 7, 'fp': 3, 'fn': 3}"
+Night-light drop only,0.934,"{'precision': 0.7, 'recall': 0.7, 'f1': 0.7, 'tp': 7, 'fp': 3, 'fn': 3}"
+Cell sites down only,1.0,"{'precision': 1.0, 'recall': 1.0, 'f1': 1.0, 'tp': 10, 'fp': 0, 'fn': 0}"

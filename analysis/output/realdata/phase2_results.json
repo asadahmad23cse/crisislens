@@ -1,0 +1,11 @@
+{
+  "phase": 2,
+  "status": "blocked",
+  "real_values_collected": 0,
+  "sources": [
+    {"name": "NASA Black Marble VNP46A2 night lights", "status": "blocked", "reason": "Download needs a NASA Earthdata account, which the team must create.", "next_step": "See analysis/realdata/PHASE2_ACCESS.md"},
+    {"name": "FCC communications status reports, Hurricane Maria (e.g. DOC-346860A1, 22 Sep 2017)", "status": "blocked", "reason": "docs.fcc.gov and apps.fcc.gov could not be reached from this machine (page reader, direct request and browser all failed).", "next_step": "Download the PDFs manually into analysis/realdata/private/fcc/ and rerun."},
+    {"name": "Official evacuation and relief-camp counts (Kerala, Puerto Rico)", "status": "not used", "reason": "The figures found describe dates after the 72-hour window, so they are context only and were not compared with the simulated evidence."}
+  ],
+  "note": "No real evidence value has been entered or imputed. The simulated evidence sheet is unchanged."
+}
